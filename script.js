@@ -38,23 +38,3 @@ themeToggleBtn.addEventListener('click', function() {
     }
     
 });
-// Check if browser allows autoplay (optional)
-if (!navigator.userAgent.match(/Firefox/i)) {
-    document.getElementById("myAudio").play();
-  }
-  
-  // Add an event listener to pause/play on focus/blur
-  window.addEventListener("focus", function() {
-    if (document.getElementById("myAudio").paused) {
-      document.getElementById("myAudio").play();
-    }
-  });
-  
-  window.addEventListener("blur", function() {
-    if (!document.getElementById("myAudio").paused) {
-      document.getElementById("myAudio").pause();
-    }
-  });
-  
-
-  
